@@ -59,10 +59,12 @@ const (
       <listen type='address' address='127.0.0.1'/>
     </graphics>
     <interface type='network'>
-      <source network='{{.Network}}'/>
+	  <source network='{{.Network}}'/>
+	  <model type='virtio'/>
     </interface>
     <interface type='network'>
-      <source network='{{.PrivateNetwork}}'/>
+	  <source network='{{.PrivateNetwork}}'/>
+	  <model type='virtio'/>
     </interface>
   </devices>
 </domain>`
